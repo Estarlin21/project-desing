@@ -1,0 +1,71 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+:root {
+    --body-color: #192233;
+    --menu-color: #212C42;
+}
+
+.container {
+    max-width: 95%;
+    margin: 1rem auto;
+}
+
+
+/*header*/
+
+body {
+    background-color: var(--body-color);
+}
+
+.logo {
+    display: flex;
+    gap: .5rem;
+}
+
+.logo h2 {
+    color: white;
+    margin: auto;
+}
+
+.logo div {
+    height: 50px;
+    width: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.ico {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.second-section {
+    display: flex;
+    gap: .5rem;
+}
+
+.second-section div {
+    display: flex;
+    gap: .5rem;
+}
+
+.second-section img {
+    margin: .2rem;
+}
