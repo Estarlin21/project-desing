@@ -2,6 +2,7 @@
     border: 0;
     margin: 0;
     padding: 0;
+    box-sizing: content-box;
 }
 
 a {
@@ -26,6 +27,8 @@ div img{
 /*header*/
 
 body {
+    overflow: hidden;
+    position: relative;
     margin: 0 auto;
     max-width: 1200px;
     background-color: var(--body-color);
@@ -240,11 +243,15 @@ img {
         }
 
     /* main content */
+
     .main-content{
         background-color: var(--menu-color);
         border-radius: 20px;
-        padding: 1rem;
-        margin-right: 3rem;
+        padding: 2rem;
+        max-height: calc(100vh - 10rem);
+        overflow: overlay;
+    }
+    .main-content .contents{
         display: grid;
         grid-template-columns: 3fr 1fr;
         gap: 1rem;
@@ -451,4 +458,141 @@ img {
 
             .calc-more p{
                 font-size: .8rem;
+            }
+
+            /*third contend child*/
+
+            .pop{
+                background-color: var(--body-color);
+                padding: .5rem;
+                border-radius: 2rem;
+                color: white;
+                display: flex;
+            }
+
+            .pop img{
+                width: 3rem;
+                height: 3rem;
+                padding: 1rem;
+            }
+
+            .inside-pop{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            /*four content child*/
+
+            .square{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
+            }
+
+            .mini-square{
+                display: flex;
+                gap: .5rem;
+                flex-direction: column;
+                padding: 1.5rem 2rem;
+                background-color: var(--body-color);
+                border-radius: 1rem;
+                color: white;
+                text-align: center;
+            }
+
+            .mini-square p{
+                font-size: .8rem;
+            }
+
+            .mini-square a{
+                text-align: center;
+                padding: .5rem 1rem;
+                border: solid blue 1px;
+                border-radius: .5rem;
+            }
+        
+        /*second content*/
+
+        .content2{
+            display: flex;
+            flex-direction: column;
+        }
+
+            /*first-second-contend-child*/
+
+            .square1{
+                color: white;
+                background-color: #6781F7;
+                padding: 1rem;
+                border-radius: 1rem;
+            }
+
+            .square1 h2{
+                font-size: 1.2rem;
+            }
+
+            .text-square .square-div{
+                margin-top: 1rem;
+                display: flex;
+                gap: .8rem
+            }
+
+            .text-square input{
+                background-color: transparent;
+                border: solid white 1px;
+                width: 100%;
+                height: 100%;
+                padding: 0 .2rem;
+                border-radius: .5rem;
+            }
+
+            .input-square{
+                position: relative;
+            }
+            
+            .text-square img{
+                width: 1.2rem;
+                height: 1.2rem;
+                padding: .5rem;
+                background-color: white;
+                border-radius: .6rem;
+            }
+
+            .text-square .input-square::after{
+                content: ' ';
+                position: absolute;
+                border: solid white 1px;
+                border-radius: .2rem;
+                right: .2rem;
+                top: .5rem;
+                display: block;
+                width: 1rem;
+                height: 1rem;
+            }
+
+            .square-div1{
+                display: flex;
+                gap: .2rem;
+            }
+
+            .icons{
+                display: flex;
+                margin-top: 1rem;
+                gap: .5rem;
+            }
+
+            .icons div{
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+            }
+
+            .icons h3{
+                font-size: 1.5rem;
+            }
+
+            .icons p{
+                font-size: .7rem;
             }
