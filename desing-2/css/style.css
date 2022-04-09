@@ -1,0 +1,23 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*menu*/
+
+.header-type-1{
+    background-image: url('/desing-2/img/city.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.m-ico-type-1{
+    filter: invert(100%) sepia(18%) saturate(12%) hue-rotate(213deg) brightness(103%) contrast(105%);
+    width: 4rem;
+}
