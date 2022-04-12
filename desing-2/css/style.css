@@ -36,10 +36,7 @@ a{
 
 img{
     width: 100%;
-    max-height: 100%;
-    object-fit: contain;
 }
-
 
 /*menu*/
 
@@ -270,15 +267,38 @@ img{
         display: grid;
         align-items: center;
     }
-    
+
     .x2{
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
 
+    .content-dnone-next{
+        display: block;
+        position: absolute;
+        width: 50%;
+        right: -55%;
+        bottom: 20%;
+    }
+
+    .content-dnone-next div:first-child{
+        display: none;
+    }
+
+    .content-type-2{
+        display: grid;
+        overflow: hidden;
+    }
+
+    .content-show-type-1{
+        padding: 2rem;
+        margin-right: 30%;
+        transition: 1s;
+    }
+
     .next{
         position: absolute;
-        right: -1rem;
+        right: 28%;
         top: 0;
         height: 100%;
     }
@@ -286,7 +306,7 @@ img{
 
     .back{
         position: absolute;
-        left: -1rem;
+        left: 0;
         top: 0;
         height: 100%;
     }

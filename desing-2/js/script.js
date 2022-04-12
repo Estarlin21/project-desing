@@ -5,10 +5,8 @@ let item = document.querySelectorAll('.item-2 .content-show-type-1');
 
 function nextPage(next, classRemove){
     let items = document.querySelectorAll('.' + next + ' .child');
-    let page = document.querySelectorAll('.' + next + ' .page');
+    let pag = document.querySelector('.' + next + ' .page');
     let pageCurrent = document.querySelectorAll('.' + next + ' .page-current');
-    pag = page[0];
-
     for (let index = items.length; index > 0; index--) {
 
         const item = items[index -1 ];
@@ -25,11 +23,21 @@ function nextPage(next, classRemove){
                 updateClass('current-page-green', pageCurrent[0], true);
                 pag.textContent = 1;
                 updateClass(classRemove, items[0], false);
+                updateClass(classRemove + '-next', items[0], false);
+                updateClass(classRemove + '-next', items[1], true);
                 return null;
+            }else if (index == items.length - 1 ){
+                updateClass('current-page-green', pageCurrent[index], true);
+                pag.textContent = index + 1;
+                updateClass(classRemove, items[index], false);
+                updateClass((classRemove + '-next'), items[0], true);
+                updateClass(classRemove + '-next', items[items.length - 1], false);
             }else{
                 updateClass('current-page-green', pageCurrent[index], true);
                 pag.textContent = index + 1;
                 updateClass(classRemove, items[index], false);
+                updateClass(classRemove + '-next', items[index], false);
+                updateClass(classRemove + '-next', items[index + 1], true);
             }
         }
     }
@@ -56,11 +64,21 @@ function backPage(next, classRemove){
                 pag.textContent = items.length;
                 updateClass('current-page-green', pageCurrent[items.length - 1], true);
                 updateClass(classRemove, items[items.length -1], false);
+                updateClass(classRemove + '-next', items[items.length - 1], false);
+                updateClass(classRemove + '-next', items[1], true);
                 return null;
+            }else if(index == 1){
+                updateClass('current-page-green', pageCurrent[index - 1], true);
+                pag.textContent = index;
+                updateClass(classRemove, items[index - 1], false);
+                updateClass((classRemove + '-next'), items[1], true);
+                updateClass(classRemove + '-next', items[0], false);
             }else{
                 updateClass('current-page-green', pageCurrent[index - 1], true);
                 pag.textContent = index;
                 updateClass(classRemove, items[index - 1], false);
+                updateClass(classRemove + '-next', items[index], true);
+                updateClass(classRemove + '-next', items[index - 1], false);
             }
         }
     }
@@ -93,7 +111,6 @@ function findClass(singleClass, classes){
     });
     return value;
 }
-
 
 
 
