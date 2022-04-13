@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: content-box;
+    scrollbar-width: 8rem;
 }
 
 ::-webkit-scrollbar{
@@ -12,6 +13,7 @@
 .container{
     width: 90%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .ico-svg-white{
@@ -36,6 +38,23 @@ a{
 
 img{
     width: 100%;
+}
+
+@media only screen and (min-width:768px){
+
+    ::-webkit-scrollbar{
+        display: block;
+        width: 5px;
+        height: 5px;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: black;
+    }
+    
+    ::-webkit-scrollbar-thumb{
+        border-radius: 2rem;
+        background-color: gray;
+    }
 }
 
 /*menu*/
@@ -117,6 +136,10 @@ img{
 }
 
 @media only screen and (min-width:768px){
+
+    .header-type-1{
+        max-width: calc(100vw - 5px);
+    }
 
     .only-desktop-type-1{
         display: flex;
@@ -257,6 +280,52 @@ img{
     font-size: 1.5rem;
 }
 
+.content-type-3{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow: scroll;
+    gap: 1rem;
+    flex: 1 1 400;
+}
+
+.content-show-type-2{
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.content-show-type-2{
+    display: flex;
+    width: 60vw;
+    height: 60vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.content-show-type-2 .content-items{
+    overflow: hidden;
+    margin-top: calc(100% - 8rem);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.content-items h3{
+    background-color: rgba(0, 0, 0, 0.244);
+    border-radius: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content-items p{
+    background-color: rgba(0, 0, 0, 0.244);
+    border-radius: 2rem;
+    font-size: 1.1rem;
+}
+
 @media only screen and (min-width: 768px){
 
     .current-page{
@@ -293,14 +362,14 @@ img{
     .content-show-type-1{
         padding: 2rem;
         margin-right: 30%;
-        transition: 1s;
     }
 
     .next{
         position: absolute;
-        right: 28%;
+        right: 0;
         top: 0;
         height: 100%;
+        padding-right: 28%;
     }
 
 
@@ -310,4 +379,29 @@ img{
         top: 0;
         height: 100%;
     }
+
+    .content-show-type-2{
+        width: 30rem;
+        height: 30rem;
+    }
+}
+
+
+/* footer */
+
+.footer-type-1{
+    background-color: rgb(79, 79, 79);
+    margin-top: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.menu-footer-1{
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 1rem;
+}
+
+.menu-footer-1 li{
+    padding: .5rem;
 }
