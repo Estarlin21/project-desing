@@ -19,6 +19,10 @@ a {
     width: 95%;
 }
 
+img{
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(177deg) brightness(105%) contrast(101%);
+}
+
 div img{
     width: 1.8rem;
     height: 1.8rem;
