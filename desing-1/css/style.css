@@ -265,7 +265,6 @@ img {
         border-radius: 20px;
         padding: 2rem;
         max-height: calc(100vh - 10rem);
-        overflow: overlay;
     }
     .main-content .contents{
         display: grid;

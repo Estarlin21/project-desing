@@ -342,6 +342,11 @@ img{
         gap: 2rem;
     }
 
+    .x5{
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+    }
+
     .content-dnone-next{
         display: block;
         position: absolute;
