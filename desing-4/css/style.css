@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(46, 47, 65);
+    height: 150vh;
+}
+
+*{
+    box-sizing: content-box;
+}
+
+.time{
+    font-size: 2.5rem;
+    color: rgb(220, 220, 220);
+}
+
+.square{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+}
+
+.square > div{
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.circle{
+    display: block;
+    background-color: red;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.ball{
+    display: block;
+    background-color: blue;
+    width: 4rem;
+    height: 4rem;
+}
