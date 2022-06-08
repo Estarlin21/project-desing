@@ -1,0 +1,248 @@
+
+/* global */
+*{
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    border: 0;
+    box-sizing: content-box;
+    color: #8A8A8A;
+}
+
+body{
+    background-color: #1E0E23;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+video{
+    width: 100%;
+    max-height: 100%;
+}
+
+.dnone{
+    display: none !important;
+}
+
+/* header */
+.header{
+    display: flex;
+    width: 90%;
+    margin: 0 3% 0 7%;
+    height: 5rem;
+    align-self: center;
+    box-shadow: 0rem .1rem 2rem black;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    position: fixed;
+    background-color: #23252b;
+    z-index: 1000;
+    top: 1rem;
+    right: 0;
+    transition: .5s;
+}
+
+.header li{
+    color: white;
+    background-color: #8a8a8a82;
+    padding: .5rem 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.header li:hover{
+    background-color: #68686882;
+}
+
+.logo{
+    color: white;
+    display: flex;
+    align-self: center;
+    font-size: 2.5rem;
+    background: #4a4a4a;
+    padding: 0 2rem;
+    border-radius: 2rem;
+    transition: .5s;
+}
+
+.logo:hover{
+    background-color: #313131;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header ul{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    height: 100%;
+    font-size: 1.5rem;
+    transition: 1s;
+}
+
+.dashe-menu-1{
+    width: 12rem;
+    padding: 0;
+    gap: 0;
+    background-color: transparent;
+}
+
+.dashe-menu-1 .logo{
+    margin: auto;
+    background-color: transparent;
+}
+
+.dashe-menu-1 ul{
+    display: none;
+}
+/* lateral menu divisror */
+.divisor{
+    margin-left: 4rem;
+}
+
+/* menu lateral */
+.lateral-menu-1{
+    background-color: #23252bd9;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 4rem;
+    height: 100vh;
+}
+
+.user{
+    display: flex;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(63, 63, 63);
+    margin: 1rem auto;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.options-user{
+    transition: 1s;
+}
+
+.user-options p{
+    text-align: center;
+    color: white;
+    text-shadow: .1rem .1rem rgb(23, 23, 56);
+    padding: .2rem 1.2rem;
+}
+.lateral-options{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.lateral-options a{
+    display: block;
+    width: 3rem;
+    height: 1rem;
+    background-color: white;
+    margin: 0 auto;
+}
+
+/* Videos */
+.video-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 2rem;
+    transition: .5s;
+    max-width: 1500px;
+    margin: 6rem auto 0;
+}
+
+.sections{
+    position: relative;
+    transition: .2s;
+    display: block;
+    height: 15.75rem;
+    width: 26rem;
+    max-height: 843.75px;
+    box-shadow: 0 .2rem 1rem black;
+    background: linear-gradient(to right, rgba(162, 2, 2, 0.853), rgb(40, 4, 4));
+}
+
+.pause{
+    position: absolute;
+    top: calc(50% - 2.5rem);
+    left: calc(50% - 2.5rem);
+    content: ' ';
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    border: 2rem solid;
+    border-color: transparent black transparent;
+    border-width: 2.5rem 0rem 2.5rem 5rem;
+    box-sizing: border-box;
+    cursor: no-drop;
+    z-index: 2;
+}
+
+.playPause{
+    position: absolute;
+    display: flex;
+    bottom: 1.5rem;
+    width: 100%;
+    height: 4rem;
+}
+
+.videoMenu{
+    display: flex;
+    width: 90%;
+    height: 3rem;
+    background-color: #23252bb7;
+    margin: 0 auto;
+    border-radius: 2rem;
+}
+
+.playPauseB{
+    margin: auto auto auto 5%;
+    display: flex;
+    width: .5rem;
+    height: 2rem;
+    border: 1rem solid;
+    border-width: 0 .5rem;
+    border-color: #ffffff;
+}
+
+.videoStatus{
+    display: block;
+    width: 80%;
+    margin: 1.2rem auto;
+    height: .5rem;
+    background-color: white;
+}
+
+.muted{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    margin: auto .5rem;
+}
+
+.fullScreen{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    margin: auto 2rem auto 0;
+}
