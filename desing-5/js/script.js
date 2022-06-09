@@ -9,23 +9,36 @@ function pageReady(){
 }
 
 function main(){
+
+
+    // video player
     var sections = document.querySelectorAll('.sections')
     var playVideo
-    // video player
     sections.forEach((section) => {
         section.addEventListener('click', () => { 
             changeWidth(section, sections)
             changeClass(section, sections, 'play', 'paused')
-            if(playVideo != undefined){
-                playVideo.pause()
-            }
             if(section.firstElementChild != null){
                 if(section.firstElementChild.paused){
-                    playVideo = section.firstElementChild
+                    if(playVideo != undefined){
+                        playVideo.firstElementChild.pause()
+                        changeClass(playVideo.lastElementChild.firstElementChild.firstElementChild, null, 'PlayB', 'PauseB')
+                    }
+                    playVideo = section
+                    screen = playVideo.lastElementChild.firstElementChild.lastElementChild
+                    section.requestFullscreen()
+                    section.firstElementChild.addEventListener('ended', () => {
+                        changeClass(playVideo.lastElementChild.firstElementChild.firstElementChild, null, 'PlayB', 'PauseB')
+                    })
+                    changeClass(playVideo.lastElementChild.firstElementChild.firstElementChild, null, 'PauseB', 'PlayB')
                     section.firstElementChild.play()
                 }else{
+                    changeClass(playVideo.lastElementChild.firstElementChild.firstElementChild, null, 'PlayB', 'PauseB')
                     section.firstElementChild.pause()
                 }
+            }else if(playVideo != undefined){
+                playVideo.firstElementChild.pause()
+                changeClass(playVideo.lastElementChild.firstElementChild.firstElementChild, null, 'PlayB', 'PauseB')
             }
         })
     })
@@ -66,17 +79,17 @@ function main(){
 
 // changeClass
 function changeClass(item, items, classAdd, classRemove){
-    items.forEach(ite => {
-        if(ite.classList.contains(classAdd)){
-            ite.classList.replace(classAdd, classRemove)
-        }
-    })
+
+    if(items != null){
+        items.forEach(ite => {
+            if(ite.classList.contains(classAdd)){
+                ite.classList.replace(classAdd, classRemove)
+            }
+        })
+    }
 
     if(item.classList.contains(classRemove)){
         item.classList.replace(classRemove, classAdd)
-    }else{
-        item.classList.replace(classAdd, classRemove)
-        console.log('add')
     }
 }
 

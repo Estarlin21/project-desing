@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="120.59299mm"
+   height="104.39825mm"
+   viewBox="0 0 120.59299 104.39825"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="audio.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.914906"
+     inkscape:cx="326.80953"
+     inkscape:cy="432.28485"
+     inkscape:window-width="1645"
+     inkscape:window-height="1243"
+     inkscape:window-x="288"
+     inkscape:window-y="288"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="147.55614"
+       y="109.30085"
+       width="107.11483"
+       height="64.487499"
+       id="rect1117" />
+    <rect
+       x="147.55614"
+       y="109.30085"
+       width="107.11483"
+       height="64.487495"
+       id="rect1117-2" />
+    <rect
+       x="147.55614"
+       y="109.30085"
+       width="107.11483"
+       height="64.487495"
+       id="rect1117-2-5" />
+    <rect
+       x="147.55614"
+       y="109.30085"
+       width="107.11483"
+       height="64.487495"
+       id="rect1117-2-9" />
+  </defs>
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(234.53457,-5.7838366)">
+    <text
+       xml:space="preserve"
+       style="font-size:67.5327px;fill:#ececec;stroke-width:5.62773"
+       x="307.86707"
+       y="-3.5371227"
+       id="text302"
+       transform="matrix(-0.46655767,0.04587436,-0.01135979,-2.1422408,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan300"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Gill Sans MT Condensed';-inkscape-font-specification:'Gill Sans MT Condensed, ';stroke-width:5.62773"
+         x="307.86707"
+         y="-3.5371227">c</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:54.6649px;fill:#ececec;stroke-width:4.55541"
+       x="274.29834"
+       y="-13.574938"
+       id="text302-6"
+       transform="matrix(-0.57638159,0.03713345,-0.01403379,-1.7340576,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan300-2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Gill Sans MT Condensed';-inkscape-font-specification:'Gill Sans MT Condensed, ';stroke-width:4.55541"
+         x="274.29834"
+         y="-13.574938">c</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:38.505px;fill:#ececec;stroke-width:3.20876"
+       x="310.67715"
+       y="-16.570654"
+       id="text302-6-3"
+       transform="matrix(-0.55490804,0.03857042,-0.01351095,-1.8011613,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan300-2-7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Gill Sans MT Condensed';-inkscape-font-specification:'Gill Sans MT Condensed, ';stroke-width:3.20876"
+         x="310.67715"
+         y="-16.570654">c</tspan></text>
+    <rect
+       style="fill:#ececec;stroke-width:0.264583"
+       id="rect488"
+       width="37.016556"
+       height="43.957157"
+       x="-224.41286"
+       y="35.281403" />
+    <ellipse
+       style="fill:#1a1a1a;stroke-width:0.407436"
+       id="path542"
+       cx="-199.97617"
+       cy="56.537003"
+       rx="12.290652"
+       ry="14.893379" />
+    <ellipse
+       style="fill:#666666;stroke-width:0.368331"
+       id="path648"
+       cx="-199.83154"
+       cy="56.536999"
+       rx="5.4946446"
+       ry="7.3743916" />
+  </g>
+</svg>
