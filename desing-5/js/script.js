@@ -115,12 +115,16 @@ function videoPlayer(item, items){
         pause()
         addEventVideo()
     }
+
+
+    
     
     function addEventVideo(){
         currentVideo.play.addEventListener('click', pause)
         currentVideo.video.addEventListener('ended', pause)
         currentVideo.fullScreen.addEventListener('click', fullScreen)
         videoStatus1 = setInterval(videoStatus, 100)
+        currentVideo.status.addEventListener('mousedown', move)
     }
 
     function removeEventVideo(){
@@ -128,6 +132,7 @@ function videoPlayer(item, items){
         currentVideo.video.removeEventListener('ended', pause)
         currentVideo.fullScreen.removeEventListener('click', fullScreen)
         clearInterval(videoStatus1)
+        currentVideo.status.removeEventListener('mousedown', move)
     }
 
     return currentVideo
@@ -135,8 +140,6 @@ function videoPlayer(item, items){
     
 // PlayPausa
 function pause(){
-    videoStatus1 = setTimeout(videoStatus, 10)
-    var items = document.querySelectorAll('.sections')
     
     if(currentVideo.video.paused){
         currentVideo.video.play()
@@ -147,12 +150,20 @@ function pause(){
     }
 }
 
+function move(e){
+    let duration = currentVideo.video.duration
+    positionV = e.offsetX * duration / currentVideo.status.clientWidth
+    currentVideo.video.currentTime = positionV
+}
+
 function videoStatus(){
     let status = currentVideo.video.currentTime
     let duration = currentVideo.video.duration
     let playStatus = status * 100 / duration + '%'
     currentVideo.status.firstElementChild.style.width = playStatus
 }
+
+
 
 function fullScreen(){
     if(currentVideo.video.requestFullscreen){
@@ -181,11 +192,7 @@ class video{
         var videoMenus = document.querySelectorAll('.videoMenu')
         videoMenus.forEach(videoMenu => {
             if(videoMenu.parentElement.parentElement == item){
-                for (let elementN = 0; elementN < videoMenu.children.length; elementN++) {
-                    if(videoMenu.children[elementN].classList.contains(classN)){
-                        this.returnItem = videoMenu.children[elementN]
-                    }
-                }
+                this.returnItem = item.querySelector('.'+classN)
             }
         })
 

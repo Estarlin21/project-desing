@@ -93,6 +93,7 @@ img {
 .second-section {
     display: flex;
     gap: 2.5rem;
+    align-self: center;
 }
 
 .second-section div {

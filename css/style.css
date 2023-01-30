@@ -1,20 +1,21 @@
 /*GLOBAL*/
-:root{
+:root {
     --menu-color: #424152;
     --body-color: #292938;
     --menu-icon: white;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-body{
+body {
     background-color: var(--body-color);
 }
 
-.container{
+.container {
     max-width: 1200px;
     width: 95%;
     margin: 0 auto;
@@ -22,46 +23,46 @@ body{
 
 /*Header*/
 
-header{
+header {
     background-color: var(--menu-color);
     margin-bottom: 2rem;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
 }
 
-header h1{
+header h1 {
     padding: 1rem 0;
     color: var(--menu-icon);
     font-size: 2rem;
 }
 
-header ul{
+header ul {
     display: flex;
     justify-content: space-around;
 }
 
-header li{
+header li {
     display: block;
     list-style: none;
     font-size: 1.5rem;
-    padding: 1rem ;
+    padding: 1rem;
     margin: .5rem 0;
     color: var(--menu-icon);
 }
 
 /*content*/
 
-main{
+main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-main section{
+main a {
     padding: 1rem;
     margin-top: 1rem;
     display: block;
@@ -69,21 +70,19 @@ main section{
     font-size: 3rem;
     color: var(--menu-icon);
     background-color: var(--menu-color);
-}
-
-main a{
     text-decoration: none;
     color: var(--menu-icon);
 }
 
+
 @media only screen and (max-width: 720px) {
-    main{
+    main {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media only screen and (max-width: 480px) {
-    main{
+    main {
         grid-template-columns: repeat(1, 1fr);
     }
 }

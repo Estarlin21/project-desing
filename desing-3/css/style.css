@@ -157,6 +157,7 @@ body{
     background-color: var(--lateral-color);
     transition: .5s;
     z-index: 100;
+    overflow: hidden;
 }
 
 .lateral-1{

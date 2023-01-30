@@ -269,6 +269,7 @@ header nav{
     display: block;
     height: .5rem;
     background-color: red;
+    transition: .1s;
 }
 .muted{
     display: block;
