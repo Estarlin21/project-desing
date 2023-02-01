@@ -1,0 +1,167 @@
+:root {
+    --textColor: #2a2a2a;
+    --bgColor: #e8e8e8;
+    --prymary: #1AFF12;
+    --secondary: #952BFF;
+    --danger: #FF5824;
+    --extra: #FDFF05;
+    --complementary: #13FFC3;
+}
+
+@property --color {
+    syntax: '<color>';
+    initial-value: #13FFC3;
+    inherits: false;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: var(--bgColor);
+}
+
+/*Header*/
+header {
+    display: flex;
+    width: 100vw; 
+    justify-content: space-between;
+    padding: .5rem 2rem;
+}
+
+.logo {
+    display: grid;
+    place-items: center;
+}
+
+.logo a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.nav>ul {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: space-around;
+    gap: .2rem;
+}
+
+
+.nav li {
+    list-style: none;
+    display: block;
+    width: 7rem;
+    height: 2.5rem;
+}
+
+.nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: grid;
+    font-size: 2rem;
+    place-items: center;
+    color: var(--textColor);
+    width: 100%;
+    height: 100%;
+    transition: color 1s;
+}
+
+.nav>ul>li>a{
+    border-radius: 1rem 1rem 0 0;
+}
+
+.nav li ul li:last-child a{
+    border-radius: 0 0 1rem 1rem;
+}
+
+.nav>ul>li {
+    position: relative;
+    background-color: var(--bgColor);
+}
+
+.nav li>ul {
+    top: 0;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    z-index: -10;
+    position: absolute;
+    transition: opacity 1s;
+}
+
+.nav ul li:hover ul {
+    opacity: 1;
+    z-index: 0;
+}
+
+.nav a:hover{
+    color: #1AFF12;
+}
+
+
+/*content container*/
+.content-container {
+    margin-left: 6rem;
+}
+
+/*Lateral*/
+.lateral {
+    border-top-right-radius: 2rem;
+    padding-top: 1rem;
+    padding-left: .8rem;
+    overflow-x: hidden;
+    height: calc(100vh - 60px);
+    background: linear-gradient(90deg,
+            var(--complementary) 90%,
+            transparent);
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    position: absolute;
+    left: 0;
+    width: 5rem;
+}
+
+.lateral section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.lateral img {
+    width: 3rem;
+}
+
+.lateral a {
+    text-decoration: none;
+    color: var(--textColor);
+    display: flex;
+    gap: 2rem;
+    place-items: center;
+    font-size: 2rem;
+    transition: linear --color .8s;
+    background: linear-gradient(90deg,
+            transparent,
+            var(--color) 10%,
+            transparent 70%);
+}
+
+.lateral a:hover {
+    --color: var(--prymary);
+}
+
+.lateral:hover {
+    width: 20vw;
+}
